@@ -2,6 +2,7 @@ import pygame
 pygame.init()
 
 
+# Main class
 class Score():
 
     def __init__(self):
@@ -18,6 +19,7 @@ class Score():
     def update_score(self):
         self.count += 1
 
+    # Show generation number/counter
     def show_generation(self, generation, win):
         self.generation_counter = self.font.render("GEN : " + str(generation), True, (255, 0, 0))
         win.blit(self.generation_counter, (self.gen_x, self.gen_y))
