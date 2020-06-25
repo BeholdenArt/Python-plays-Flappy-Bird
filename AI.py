@@ -9,11 +9,17 @@ from Score import Score
 import pygame
 pygame.init()
 
+
+# VARIABLES
 WIN_WIDTH = 550
 WIN_HEIGHT = 800
 GENERATION = 0
+
+# Initializing screen
 bg = pygame.transform.scale2x(pygame.image.load("D:/Code/Tensor/Neural Network/Flappy Bird/Images/bg.png"))
 
+
+# Draw window
 def draw_window(win, birds, pipes, s, gen):
     win.blit(bg, (0, 0))
     for pipe in pipes:
@@ -28,9 +34,8 @@ def draw_window(win, birds, pipes, s, gen):
 
     pygame.display.update()
 
-
-
-
+    
+# Main function
 def main(genomes, config):
     global GENERATION
     GENERATION += 1
