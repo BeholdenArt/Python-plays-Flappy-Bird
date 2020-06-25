@@ -2,10 +2,10 @@ import os
 import pygame
 pygame.init()
 
+# MAIN CLASS
 class Bird():
-
-    BIRD_IMAGE = pygame.image.load(os.path.join("Images", "P.png"))
-#    BIRD_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("Images", "bird1.png")))
+    # Loading image
+    BIRD_IMAGE = pygame.transform.scale2x(pygame.image.load(os.path.join("Images", "bird1.png")))
 
     def __init__(self, x, y):
         self.x = x
