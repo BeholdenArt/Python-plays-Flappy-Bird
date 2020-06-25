@@ -4,11 +4,14 @@ import os
 import pygame
 pygame.init()
 
-
+# Main class
 class Pipe():
+    # Loading image
     PIPE_BOTTOM = pygame.transform.scale2x(pygame.image.load(os.path.join("Images", "pipe.png")))
     PIPE_TOP = pygame.transform.flip(PIPE_BOTTOM, False, True)
+    # Pipe pair gap
     GAP = 0
+    # Pipe velocity
     PIPE_VELOCITY = 2.5
 
     def __init__(self, x):
