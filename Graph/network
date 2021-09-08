@@ -1,0 +1,10 @@
+digraph {
+	node [fontsize=9 height=0.2 shape=circle width=0.2]
+	"Bird position." [fillcolor=lightgray shape=box style=filled]
+	"Distance between bird and top pipe" [fillcolor=lightgray shape=box style=filled]
+	"Distance between bird and bottom pipe" [fillcolor=lightgray shape=box style=filled]
+	"Bird Jump" [fillcolor=lightblue style=filled]
+	"Bird position." -> "Bird Jump" [color=green penwidth=0.11014241409552385 style=solid]
+	"Distance between bird and top pipe" -> "Bird Jump" [color=green penwidth=0.6193292935877347 style=solid]
+	"Distance between bird and bottom pipe" -> "Bird Jump" [color=red penwidth=0.406400543178864 style=solid]
+}
